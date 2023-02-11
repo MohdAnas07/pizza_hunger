@@ -3,6 +3,7 @@
 .nav{
     height: 70px;
     background-color: $pure;
+    width: 100%;
 
     .wrapper{
         display: flex;
@@ -11,6 +12,8 @@
         height: 100%;
         width: 90%;
         margin: auto;
+        
+    position: relative;
 
         .leftNav{
             display: flex;
@@ -42,8 +45,55 @@
                     }
                 }
             }
+        }
+
+        .mobilMenu{
+            position: absolute;
+            top: 70px;
+            right: 0px;
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            z-index: 1;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid;
+            gap: 1rem;
+            padding-top: 1rem;
+            transition: $smooth;
+
+            .navItem{
+                img{
+                    background-color: $primary;
+                    padding: 5px 10px;
+                    border-radius: 15px;
+                    transition: $smooth;
+        
+                    &:hover{
+                        transform: scale(1.1);
+                        background-color: $primary-hover;
+                    }
+                }
+            }
 
         }
     }
 
+}
+
+.hamburgerMenu{
+    display: none;
+}
+
+
+@media screen and (max-width:'768px') {
+    .rightNav{
+        display: none;
+    }
+
+    .hamburgerMenu{
+        display: block;
+        font-size: 1.5rem;
+    }
 }

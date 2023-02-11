@@ -29,9 +29,11 @@ const Home = () => {
                             <button data-aos='zoom-in' class="ordBtn">Order Now</button>
                         </div>
                     </div>
+
                     <div className="rightHome">
                         <img data-aos='zoom-in' className='heroImg' src="./images/hero-pizza.png" alt="" />
                     </div>
+
                 </div>
 
                 <HashScroll hash="#menu">

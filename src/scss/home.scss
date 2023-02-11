@@ -82,3 +82,18 @@
 
     
 }
+
+
+@media screen and (max-width:'868px') {
+    .homeSection{
+        flex-direction: column;
+padding: 1rem 0;
+    }
+    .leftHome{
+        text-align: center;
+    }
+
+    .rightHome{
+        display: none !important;
+    }
+}
