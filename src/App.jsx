@@ -4,6 +4,13 @@ import Footer from './components/Footer'
 import Nav from './components/Nav'
 import Home from './pages/Home'
 import './scss/app.scss'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from 'react-router-dom';
+import Contact from './pages/Contact'
 
 
 
@@ -11,12 +18,17 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <Nav />
-      <Home />
-
-      {/* <Footer /> */}
-    </div>
+    <Router>
+      <div className="App">
+        <Nav />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          {/* <Route path='#Menu' element={<Home />} /> */}
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   )
 }
 

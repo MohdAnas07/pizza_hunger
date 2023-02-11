@@ -3,9 +3,10 @@ import '../scss/footer.scss';
 
 const Footer = () => {
     return (
-        <div>
+        <div className='footer'>
             <div className="wrapper">
-                ©2021 Pizza Hunger All rights reserved.
+                <p>©2023 Pizza Hunger All rights reserved. Developed by
+                    <a href="https://github.com/MohdAnas07"> Anas</a></p>
             </div>
         </div>
     )

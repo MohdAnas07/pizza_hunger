@@ -1,9 +1,19 @@
 import React from 'react'
 import '../scss/pizzaCard.scss';
 
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const PizzaCard = ({ pizza }) => {
+
+    AOS.init({
+        duration: 600, // values from 0 to 3000, with step 50ms
+        easing: 'ease-in-out',
+        once: true,
+    });
     return (
-        <div className=" card">
+        <div data-aos="zoom-in" className=" card">
             <div className="cardWrapper">
                 <img className="cardImg" src={pizza.image} alt="" />
                 <div className="cardInfo">

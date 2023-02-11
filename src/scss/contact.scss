@@ -1,0 +1,156 @@
+@import './variable.scss';
+.c {
+    height: 100vh;
+    position: relative;
+    /* background-image:var(--bg-primary); */
+}
+
+.c-bg {
+    width: 20px;
+    height: 100%;
+    background-color: var(--primaryColor);
+    position: absolute;
+}
+
+.c-wrapper {
+    padding: 50px 50px 0 50px;
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.c-left {
+    flex: 1;
+}
+
+.c-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+
+}
+
+.c-title {
+    font-size: 3rem;
+    width: 80%;
+}
+
+.c-info-item {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+    font-weight: 300;
+    width: 70%;
+
+}
+
+.c-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.c-desc {
+    font-weight: 300;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input {
+    width: 60%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin: 10px 0;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+input:focus {
+    border-bottom: 2px solid black;
+}
+
+textarea {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 14px;
+    padding-left: 10px;
+    outline: none;
+    padding: 10px;
+    resize: none;
+    border: 1px solid black;
+
+}
+
+textarea:focus {
+    border: 2px solid black;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    background-color: $primary !important;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+
+
+@media screen and (max-width:480px) {
+
+    .c {
+        height: 100%;
+        padding-bottom: 20px;
+    }
+
+    .c-wrapper {
+        flex-direction: column;
+        padding: 0 50px;
+        width: 100%;
+    }
+    
+
+    .c-title {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .c-info-item {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .c-desc {
+        display: none;
+    }
+
+    form {
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    input {
+        height: 40px;
+        width: 100%;
+    }
+
+    textarea {
+        height: 80px;
+    }
+
+    button {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+
+
+}

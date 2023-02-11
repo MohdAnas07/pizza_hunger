@@ -24,6 +24,7 @@
                 .navItem{
                     cursor: pointer;
                     font-size: 1.2rem;
+                    transition: $smooth;
                     &:hover{
                         color: $primary-hover;
                     }

@@ -1,11 +1,15 @@
 @import './variable.scss';
 
 .footer{
-    height: 60px;
+    height: 70px;
     background-color: $pure;
-    // width: 100%;
+    width: 100%;
+    color: $gray;
 
     .wrapper{
-
+        height: 100%;
+        display: grid;
+        place-items: center;
+        text-align: center;
     }
 }
