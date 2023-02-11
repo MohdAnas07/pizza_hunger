@@ -1,5 +1,6 @@
 import React from 'react'
 import '../scss/cart.scss';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
     return (
@@ -9,7 +10,7 @@ const Cart = () => {
                 <p class=""> You Probably haven't ordered Pizza yet.
                     To Order a pizza, go to main Page.</p>
                 <img class="cartImg" src="./images/empty-cart.png" alt="" />
-                <button className='cartBtn'><a href="/" > Go Back</a></button>
+                <Link to="/" ><button className='cartBtn'> Go Back</button></Link>
             </div>
         </div>
     )

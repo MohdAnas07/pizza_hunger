@@ -12,8 +12,8 @@ const PizzaCard = ({ pizza }) => {
         once: true,
     });
     return (
-        <div data-aos="zoom-in" className="card">
-            <div className="cardWrapper">
+        <div className="card">
+            <div data-aos="zoom-in" className="cardWrapper">
                 <img className="cardImg" src={pizza.image} alt="" />
                 <div className="cardInfo">
                     <h2 className="cardInfoName">{pizza.name}</h2>

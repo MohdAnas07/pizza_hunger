@@ -4,12 +4,12 @@
 .card{
     width: 250px;
     height: 350px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     transition: $smooth;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     &:hover{
         transform: scale(1.05);
     }
-
+    
     .cardWrapper{
         display: flex;
         align-items: center;
@@ -58,3 +58,4 @@
         }
     }
 }
+
