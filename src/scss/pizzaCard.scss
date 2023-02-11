@@ -1,0 +1,57 @@
+@import './variable.scss';
+
+.card{
+    width: 250px;
+    height: 350px;
+    // border: 1px solid;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    transition: $smooth;
+    &:hover{
+        transform: scale(1.05);
+    }
+
+    .cardWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        padding: 1rem;
+
+        .cardImg{
+            width: 90%;
+        }
+
+        .cardInfo{
+            text-align: center;
+            width: 100%;
+
+            .cardInfoPrice{
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-around;
+
+                .cardInfoBtn{
+                    color: $pure;
+                    background-color: $primary;
+                    outline: none;
+                    background-color: #ff6219;
+                    color: white;
+                    transition: all 0.3s ease-in-out;
+                    box-shadow: 5px 5px 20px #8e8d8d;
+                    border-radius: 30px;
+                    margin-top: 10px;
+                    border: none;
+                    font-family:'Yusei Magic', 'sans-serif';
+                    &:hover{
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}

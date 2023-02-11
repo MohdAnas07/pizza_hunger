@@ -1,0 +1,89 @@
+@import './variable';
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+body{
+    font-family:'Yusei Magic', 'sans-serif';
+    color: $dark;
+    background-color: $secondary;
+
+}
+
+.App{
+    // color: Red;
+    width: 100vw;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+}
+
+
+#logo img{
+    cursor: pointer;
+}
+
+nav ul li{
+    color:$dark;
+    padding:0px 9px;
+    &:hover{
+        color:$primary;
+        transition:$smooth;
+    }
+}
+
+
+#cart{
+
+    background-color: $primary;
+    &:hover{
+        transition:$smooth;
+        background-color: $primary-hover;
+    }
+}
+
+.hero{
+    background-color: $secondary;
+}
+
+.size{
+    background-color: $gray;
+}
+
+.items-cart{
+
+    background-color:$secondary;
+    transition:$smooth;
+    &:hover{
+        box-shadow: 5px 5px 25px rgb(161, 160, 160);
+    }
+}
+
+section.cart{
+    background-color: $secondary;
+
+    .amount{
+        color:$primary;
+    }
+}
+
+
+section.login{
+    background-color: $secondary;
+    min-height: 78vh;
+    a{
+        color:$primary;
+        &:hover{
+            color:$primary-hover;
+        }
+    }
+}
+
+.noty_theme__mint{
+    border-radius: 50px!important;
+    padding-left: 8px!important;
+}
+
+.login-h{
+    color:$primary;
+}
