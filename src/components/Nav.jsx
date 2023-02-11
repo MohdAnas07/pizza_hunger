@@ -16,7 +16,6 @@ const Nav = () => {
                         </li>
                         <li className="navItem">
                             <Link to="/#menu">Menu</Link>
-
                         </li>
                         <li className="navItem">
                             <Link to='/contact'>Contact</Link>

@@ -1,7 +1,6 @@
 import React from 'react'
 import '../scss/pizzaCard.scss';
 
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -13,7 +12,7 @@ const PizzaCard = ({ pizza }) => {
         once: true,
     });
     return (
-        <div data-aos="zoom-in" className=" card">
+        <div data-aos="zoom-in" className="card">
             <div className="cardWrapper">
                 <img className="cardImg" src={pizza.image} alt="" />
                 <div className="cardInfo">

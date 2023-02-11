@@ -1,0 +1,39 @@
+.cart{
+    width: 100%;
+    
+    .cartWrapper{
+        width: 90%;
+        margin: auto;
+        padding: 1rem 0;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .cartImg{
+            width: 33%;
+            padding: 2rem 0;
+        }
+
+        .cartBtn{
+            outline: none;
+            background-color: #ff6219;
+            color: white !important;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 5px 5px 20px #8e8d8d;
+            border-radius: 30px;
+            // margin-top: 1rem;
+            border: none;
+            font-family:'Yusei Magic', 'sans-serif';
+            a{
+                color: #fff;
+            }
+            &:hover{
+                box-shadow: none;
+            }
+        }
+
+    }
+}

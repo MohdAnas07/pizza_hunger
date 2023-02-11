@@ -11,8 +11,7 @@ import {
   Link
 } from 'react-router-dom';
 import Contact from './pages/Contact'
-
-
+import Cart from './pages/Cart'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +24,7 @@ function App() {
           <Route path='/' element={<Home />} />
           {/* <Route path='#Menu' element={<Home />} /> */}
           <Route path='/contact' element={<Contact />} />
+          <Route path='/cart' element={<Cart />} />
         </Routes>
         <Footer />
       </div>
