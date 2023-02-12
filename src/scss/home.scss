@@ -27,6 +27,11 @@
                         font-size: 5rem;
                         color: $primary;
                     }
+
+                    .mobile-pizza{
+                        display: none;
+                        // width: 50%;
+                    }
                 }
     
                 .bottomLeftHome{
@@ -63,6 +68,7 @@
                 align-items: center;
                 .heroImg{
                     width: 90%;
+                    display: block !important;
     
                 }
             }
@@ -79,21 +85,47 @@
             }
         }
     }
-
-    
 }
+
+
+@media screen and (max-width:'868px') {
+    .leftHome{
+        justify-content: space-evenly !important; 
+        .topLeftHome{
+            .mobile-pizza{
+                display: block !important;
+                    img{
+                        width: 55%;
+                        margin: 2rem 0;
+                    }
+                }
+            }
+
+        .bottomLeftHome{
+            margin-top: 0 !important;
+        }
+    }
+}
+
+
+
+
+
 
 
 @media screen and (max-width:'868px') {
     .homeSection{
         flex-direction: column;
-padding: 1rem 0;
+        padding: 1rem 0;
     }
     .leftHome{
         text-align: center;
-    }
-
+        justify-content: space-evenly;
+        }
     .rightHome{
         display: none !important;
     }
+
 }
+
+

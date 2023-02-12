@@ -14,6 +14,7 @@ const Home = () => {
         easing: 'ease-in-out',
         once: true,
     });
+    console.log(window.innerWidth)
 
     return (
         <div className="home">
@@ -22,6 +23,9 @@ const Home = () => {
                     <div className="leftHome">
                         <div data-aos='zoom-in' className="topLeftHome">
                             <h1 >Pizza Hunger</h1>
+                            <div className='mobile-pizza'>
+                                <img src="./images/hero-pizza.png" alt="" />
+                            </div>
                         </div>
                         <div className="bottomLeftHome">
                             <h6 data-aos='zoom-in' className=""><em> Are you Hunger?</em></h6>
