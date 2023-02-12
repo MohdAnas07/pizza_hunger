@@ -89,6 +89,9 @@
 
 
 @media screen and (max-width:'868px') {
+    .pizzaWrapper{
+        padding: 1rem 0;
+    }
     .leftHome{
         justify-content: space-evenly !important; 
         .topLeftHome{
@@ -96,7 +99,7 @@
                 display: block !important;
                     img{
                         width: 55%;
-                        margin: 2rem 0;
+                        margin: 1rem 0;
                     }
                 }
             }
@@ -109,23 +112,19 @@
 
 
 
-
-
-
-
 @media screen and (max-width:'868px') {
     .homeSection{
         flex-direction: column;
         padding: 1rem 0;
     }
+
     .leftHome{
         text-align: center;
-        justify-content: space-evenly;
+        justify-content: space-evenly !important;
         }
     .rightHome{
         display: none !important;
     }
-
 }
 
 
