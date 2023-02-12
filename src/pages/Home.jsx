@@ -13,6 +13,7 @@ const Home = () => {
         duration: 600, // values from 0 to 3000, with step 50ms
         easing: 'ease-in-out',
         once: true,
+        offset: 80,
     });
     console.log(window.innerWidth)
 
