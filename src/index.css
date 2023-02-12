@@ -51,3 +51,25 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
+
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(255, 98, 25);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(214, 69, 1);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

@@ -1,5 +1,6 @@
 .cart{
-    width: 100%;
+    min-width: 100%;
+    min-height:calc(100vh - 60px );
     
     .cartWrapper{
         width: 90%;
