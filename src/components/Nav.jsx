@@ -5,7 +5,6 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Nav = () => {
     const [showMenu, setShowMenu] = useState(false);
-
     return (
         <div className="nav">
             <div className="wrapper">

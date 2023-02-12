@@ -39,7 +39,8 @@ function Contact() {
             <div className="c-bg"></div>
             <div className="c-wrapper">
                 <div className="c-left">
-                    <h1 data-aos='zoom-in' className="c-title">HELP US MAKE PIZZA HUNGER BETTER</h1>
+                    <h1 data-aos='zoom-in' className="c-title">HELP US MAKE
+                        <span style={{ color: 'rgb(255, 98, 25)' }} > PIZZA HUNGER</span> BETTER</h1>
                     <div data-aos='zoom-in' className="c-info">
                         <div className="c-info-item">
                             <img src={Phone} alt="" className="c-icon" />

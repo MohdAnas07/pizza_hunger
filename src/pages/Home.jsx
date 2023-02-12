@@ -3,7 +3,7 @@ import '../scss/home.scss';
 import { pizzas } from '../pizza_data';
 import PizzaCard from '../components/PizzaCard';
 
-import { HashScroll } from "react-hash-scroll";
+// import { HashScroll } from "react-hash-scroll";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -36,20 +36,20 @@ const Home = () => {
 
                 </div>
 
-                <HashScroll hash="#menu">
-                    <div className="pizzaSection">
-                        <h2 data-aos='fade-up'>All Pizzas </h2>
-                        <div className="pizzaWrapper">
-                            {
-                                pizzas && pizzas.map(p => {
-                                    return (
-                                        <PizzaCard key={p._id} pizza={p} />
-                                    )
-                                })
-                            }
-                        </div>
+                {/* <HashScroll hash="#menu"> */}
+                <div className="pizzaSection">
+                    <h2 data-aos='fade-up'>All Pizzas </h2>
+                    <div className="pizzaWrapper">
+                        {
+                            pizzas && pizzas.map(p => {
+                                return (
+                                    <PizzaCard key={p._id} pizza={p} />
+                                )
+                            })
+                        }
                     </div>
-                </HashScroll>
+                </div>
+                {/* </HashScroll> */}
             </div>
 
 
