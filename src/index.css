@@ -53,7 +53,7 @@ button {
 }
 
 
-
+/* Scroll Bar Setting  */
 ::-webkit-scrollbar {
   width: 6px;
 }
