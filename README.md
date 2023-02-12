@@ -1,6 +1,6 @@
 Live Demo : https://pizza-hunger.vercel.app/
 
-Some Screenshot of the website
+Some Screenshot of the PIZZA HUNGER website
 
 ![pizza_hunger](https://user-images.githubusercontent.com/68696709/218295809-d4c38781-f57d-4f46-b566-72aebca9854a.jpg)
 ![menu](https://user-images.githubusercontent.com/68696709/218295817-d901eb5d-b47d-4bd7-9f3d-1e0257b77d40.jpg)
