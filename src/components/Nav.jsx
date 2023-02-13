@@ -1,10 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../scss/nav.scss';
 import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { BsFillCartPlusFill } from 'react-icons/bs'
+import { useSelector } from 'react-redux';
+
 
 const Nav = () => {
     const [showMenu, setShowMenu] = useState(false);
+    const { allProducts } = useSelector((state) => state);
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        setCount(allProducts.length)
+    }, [allProducts])
+
+
     return (
         <div className="nav">
             <div className="wrapper">
@@ -19,14 +30,16 @@ const Nav = () => {
                             <Link to='/'>Home </Link>
                         </li>
                         <li className="navItem">
-                            <Link to="/#menu">Menu</Link>
+                            <Link to="/menu">Menu</Link>
                         </li>
                         <li className="navItem">
                             <Link to='/contact'>Contact</Link>
                         </li>
-                        <li className="navItem">
+                        <li className="navItem cartIcon">
                             <Link to='/cart'>
-                                <img src="./images/cart.png" alt="" />
+                                {/* <img src="./images/cart.png" alt="" /> */}
+                                <BsFillCartPlusFill style={{ fontSize: "1.2rem" }} />
+                                <span className="countBadge">{count}</span>
                             </Link>
                         </li>
                     </ul>
@@ -46,7 +59,7 @@ const Nav = () => {
                             <Link to='/'>Home </Link>
                         </li>
                         <li onClick={() => setShowMenu(false)} className="navItem">
-                            <Link to="/#menu">Menu</Link>
+                            <Link to="/menu">Menu</Link>
                         </li>
                         <li onClick={() => setShowMenu(false)} className="navItem">
                             <Link to='/contact'>Contact</Link>
