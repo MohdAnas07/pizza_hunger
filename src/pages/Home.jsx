@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import '../scss/home.scss';
-import { pizzas } from '../pizza_data';
 import PizzaCard from '../components/PizzaCard';
 
 // import { HashScroll } from "react-hash-scroll";
 
+import { pizzas } from '../pizza_data';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Menu from '../components/Menu';
 
 const Home = () => {
     AOS.init({
@@ -31,7 +33,7 @@ const Home = () => {
                         <div className="bottomLeftHome">
                             <h6 data-aos='zoom-in' className=""><em> Are you Hunger?</em></h6>
                             <h1 data-aos='zoom-in' className="">Don't Wait !</h1>
-                            <button data-aos='zoom-in' class="ordBtn">Order Now</button>
+                            <button data-aos='zoom-in' className="ordBtn">Order Now</button>
                         </div>
                     </div>
 
@@ -41,20 +43,10 @@ const Home = () => {
 
                 </div>
 
-                {/* <HashScroll hash="#menu"> */}
-                <div className="pizzaSection">
-                    <h2 data-aos='fade-up'>All Pizzas </h2>
-                    <div className="pizzaWrapper">
-                        {
-                            pizzas && pizzas.map(p => {
-                                return (
-                                    <PizzaCard key={p._id} pizza={p} />
-                                )
-                            })
-                        }
-                    </div>
-                </div>
-                {/* </HashScroll> */}
+
+                {/* Menu Cart  */}
+                <Menu pizzas={pizzas.slice(0, 8)} />
+
             </div>
 
 

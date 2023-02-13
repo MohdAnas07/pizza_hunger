@@ -44,6 +44,26 @@
                         }
                     }
                 }
+
+                .cartIcon{
+                    position: relative;
+
+                    .countBadge{
+                        position: absolute;
+                        top: -9px;
+                        right: -9px;
+                        background-color: rgb(255, 98, 25);
+                        min-width: 15px;
+                        min-height: 15px;
+                        border-radius: 50%;
+                        display: grid;
+                        place-items: center;
+                        font-size: 11px;
+                        color: $pure;
+                    }
+
+
+                }
             }
         }
 
@@ -76,6 +96,25 @@
                     }
                 }
             }
+            .cartIcon{
+                position: relative;
+
+                .countBadge{
+                    position: absolute;
+                    top: -9px;
+                    right: -9px;
+                    background-color: rgb(255, 98, 25);
+                    min-width: 15px;
+                    min-height: 15px;
+                    border-radius: 50%;
+                    display: grid;
+                    place-items: center;
+                    font-size: 11px;
+                    color: $pure;
+                }
+
+
+            }
 
         }
     }
@@ -94,6 +133,32 @@
 
     .hamburgerMenu{
         display: block;
+        display: flex;
+        gap: 1rem;
         font-size: 1.5rem;
+
+        .cartIcon{
+            position: relative;
+            .countBadge{
+                position: absolute;
+                top: -9px;
+                right: -9px;
+                background-color: rgb(255, 98, 25);
+                min-width: 15px;
+                min-height: 15px;
+                border-radius: 50%;
+                display: grid;
+                place-items: center;
+                font-size: 11px;
+                color: $pure;
+            }
+        }
+        // .countBadge{
+        //  position: absolute;   
+        // }
+        // .cartIcon{
+        //     position: relative;
+        // }
+        
     }
 }
