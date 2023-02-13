@@ -21,7 +21,7 @@ const Cart = () => {
     return (
         <>
             {
-                len > 0 ? <CartItems allProducts={allProducts} totalPrice={totalPrice} />
+                len > 0 ? <CartItems allProducts={allProducts} count={len} totalPrice={totalPrice} />
                     :
                     (<div className='cart'>
                         <div className="cartWrapper">

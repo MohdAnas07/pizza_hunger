@@ -37,9 +37,10 @@ const Nav = () => {
                         </li>
                         <li className="navItem cartIcon">
                             <Link to='/cart'>
-                                {/* <img src="./images/cart.png" alt="" /> */}
                                 <BsFillCartPlusFill style={{ fontSize: "1.2rem" }} />
-                                <span className="countBadge">{count}</span>
+                                {
+                                    count > 0 && <span className="countBadge">{count}</span>
+                                }
                             </Link>
                         </li>
                     </ul>
@@ -48,27 +49,33 @@ const Nav = () => {
 
                 {/* { Hamburger Menu } */}
 
+                {/* <li className="navItem hamburgerMenu">
+                    
+                </li> */}
                 <div className="hamburgerMenu">
+                    <div className="cartIcon">
+                        <Link to='/cart'>
+                            <BsFillCartPlusFill style={{ fontSize: "1.2rem" }} />
+                            {count > 0 && <span className="countBadge">{count}</span>}
+                        </Link>
+                    </div>
                     <GiHamburgerMenu onClick={() => setShowMenu(!showMenu)} />
                 </div>
 
+
                 {/* In Mobile Mode Show Menu*/}
                 {
-                    showMenu && <ul className="mobilMenu">
-                        <li onClick={() => setShowMenu(false)} className="navItem">
+                    showMenu && <ul onClick={() => setShowMenu(false)} className="mobilMenu">
+                        <li className="navItem">
                             <Link to='/'>Home </Link>
                         </li>
-                        <li onClick={() => setShowMenu(false)} className="navItem">
+                        <li className="navItem">
                             <Link to="/menu">Menu</Link>
                         </li>
-                        <li onClick={() => setShowMenu(false)} className="navItem">
+                        <li className="navItem">
                             <Link to='/contact'>Contact</Link>
                         </li>
-                        <li onClick={() => setShowMenu(false)} className="navItem">
-                            <Link to='/cart'>
-                                <img src="./images/cart.png" alt="" />
-                            </Link>
-                        </li>
+
                     </ul>
                 }
 

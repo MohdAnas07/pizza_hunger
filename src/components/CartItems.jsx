@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 import { RiDeleteBin5Fill } from 'react-icons/ri'
 import { removeProduct } from '../redux/actions/productActions'
 
-const CartItems = ({ allProducts, totalPrice }) => {
+const CartItems = ({ allProducts, count, totalPrice }) => {
 
     const dispatch = useDispatch()
 
@@ -11,9 +11,8 @@ const CartItems = ({ allProducts, totalPrice }) => {
         dispatch(removeProduct(p))
     }
 
-
     return (
-        <div style={{ maxHeight: 'calc(100vh - 70px)' }} className="order container mx-auto w-1/2 ">
+        <div className="order container mx-auto w-1/2 ">
             {/* { */}
             <div className=" flex items-center border-b border-gray-300 pb-4">
                 <img src="/img/cart-black.png" alt="" />
@@ -41,6 +40,7 @@ const CartItems = ({ allProducts, totalPrice }) => {
             <hr className="border-gray-300" />
             <div className="text-right py-4">
                 <div>
+                    <span className="text-gray-500"> {count} pics </span>
                     <span className="font-bold text-lg">Total Amount : </span>
                     <span className="amount font-bold text-2xl ml-2">₹ {totalPrice}</span>
                 </div>

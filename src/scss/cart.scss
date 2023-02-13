@@ -1,5 +1,19 @@
 @import './variable.scss';
 
+.order{
+    max-height: calc(100vh - 70px);
+}
+
+@media screen and (max-width:'800px') {
+
+    .order{
+        min-height: 100vh;
+        width: 90%;
+    }
+
+}
+
+
 .cart{
     min-width: 100%;
     min-height:calc(100vh - 60px );
