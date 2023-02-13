@@ -5,11 +5,13 @@
     background-color: $pure;
     width: 100%;
     color: $gray;
+    z-index: 0;
 
     .wrapper{
         height: 100%;
         display: grid;
         place-items: center;
         text-align: center;
+        // z-index: 0;
     }
 }

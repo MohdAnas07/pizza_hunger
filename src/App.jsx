@@ -23,6 +23,7 @@ function App() {
           <Route path='/menu' element={<MenuPage />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/cart' element={<Cart />} />
+          <Route path='*' element={<Home />} />
         </Routes>
         <Footer />
       </Router>
