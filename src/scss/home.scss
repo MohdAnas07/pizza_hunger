@@ -87,19 +87,26 @@
 }
 
 
+@media screen and (max-width:'500px') {
+    .bottomLeftHome{
+        margin-top: 0rem !important; 
+        margin-bottom: 1rem !important;
+    }
+}
+
 @media screen and (max-width:'868px') {
     .pizzaWrapper{
         padding: 1rem 0;
     }
     .leftHome{
         text-align: center;
-        justify-content: center !important;
+        justify-content: space-evenly !important;
         .topLeftHome{
             .mobile-pizza{
                 display: block !important;
                     img{
                         width: 55%;
-                        margin: 2rem auto;
+                        margin: 1rem auto;
                     }
                 }
             }
@@ -107,7 +114,6 @@
             margin-top: 0rem !important;
         }
     }
-
     .homeSection{
         flex-direction: column;
         padding: 0rem 0 !important;
@@ -116,6 +122,8 @@
         display: none !important;
     }
 }
+
+
 
 
 
