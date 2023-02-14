@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { BsFillCartPlusFill } from 'react-icons/bs'
 import { useSelector } from 'react-redux';
+import { AiOutlineCloseSquare } from 'react-icons/ai'
 
 
 const Nav = () => {
@@ -48,10 +49,6 @@ const Nav = () => {
 
 
                 {/* { Hamburger Menu } */}
-
-                {/* <li className="navItem hamburgerMenu">
-                    
-                </li> */}
                 <div className="hamburgerMenu">
                     <div className="cartIcon">
                         <Link to='/cart'>
@@ -59,8 +56,13 @@ const Nav = () => {
                             {count > 0 && <span className="countBadge">{count}</span>}
                         </Link>
                     </div>
-                    <GiHamburgerMenu onClick={() => setShowMenu(!showMenu)} />
+                    <div onClick={() => setShowMenu(!showMenu)}>
+                        {
+                            showMenu ? <AiOutlineCloseSquare /> : <GiHamburgerMenu />
+                        }
+                    </div>
                 </div>
+
 
 
                 {/* In Mobile Mode Show Menu*/}
