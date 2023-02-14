@@ -1,15 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../scss/pizzaCard.scss';
 import { useDispatch, useSelector } from 'react-redux';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { setProducts } from '../redux/actions/productActions';
 
 const PizzaCard = ({ pizza }) => {
+    const notify = () => toast("Item Added!");
 
     const products = useSelector((state) => state)
     const dispatch = useDispatch()
+    const [isAdded, setIsAdded] = useState(false);
 
 
     AOS.init({
@@ -19,7 +23,14 @@ const PizzaCard = ({ pizza }) => {
         offset: 80,
     });
 
+
     const addProduct = (pizza) => {
+        setIsAdded(true)
+        setTimeout(() => {
+            setIsAdded(false)
+        }, 500)
+
+        // notify()
         dispatch(setProducts(pizza))
     }
 
@@ -34,7 +45,7 @@ const PizzaCard = ({ pizza }) => {
                     </span>
                     <div className="cardInfoPrice">
                         <span className="">₹{pizza.price}</span>
-                        <button onClick={() => addProduct(pizza)} data-pizza="{JSON.stringify(pizza) }"
+                        <button style={isAdded ? { backgroundColor: 'rgb(110, 110, 110)' } : {}} onClick={() => addProduct(pizza)} data-pizza="{JSON.stringify(pizza)}"
                             className="cardInfoBtn">
                             <span className="">+</span>
                             <span className="">Add</span>
