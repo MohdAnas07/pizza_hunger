@@ -5,12 +5,13 @@ import './scss/app.scss'
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from 'react-router-dom';
 import Contact from './pages/Contact'
 import Cart from './pages/Cart'
 import MenuPage from './pages/MenuPage'
+import Order from './pages/Order';
+
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Route path='/menu' element={<MenuPage />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/cart' element={<Cart />} />
+          <Route path='/order' element={<Order />} />
           <Route path='*' element={<Home />} />
         </Routes>
         <Footer />

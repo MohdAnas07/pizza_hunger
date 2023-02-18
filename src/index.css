@@ -17,8 +17,8 @@ a {
   font-weight: 500;
   color: #000000;
   text-decoration: inherit;
-
 }
+
 a:hover {
   color:rgb(255, 98, 25);
 }
@@ -40,7 +40,6 @@ h1 {
 }
 
 
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -50,6 +49,7 @@ button {
   font-family: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
+  color: #fff;
 }
 
 

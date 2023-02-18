@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { RiDeleteBin5Fill } from 'react-icons/ri'
 import { removeProduct } from '../redux/actions/productActions'
+import { Link } from 'react-router-dom'
 
 const CartItems = ({ allProducts, count, totalPrice }) => {
 
@@ -46,14 +47,15 @@ const CartItems = ({ allProducts, count, totalPrice }) => {
                 </div>
 
                 <div>
-                    <form action="/orders" method="POST" className="mt-10">
+                    <form className="mt-10">
                         <input name="phone" className="border border-gray-400 p-2 w-1/2 my-2" type="text"
                             placeholder="Phone Number" />
                         <input name="address" className="border border-gray-400 p-2 w-1/2 my-2" type="text"
                             placeholder="Address" />
-
                         <div>
-                            <button type="submit" className="btn-shadow my-3 py-2 px-6 rounded-full">Order Now </button>
+                            <button type="submit" className="btn-shadow my-3 py-2 px-6 rounded-full">
+                                <Link style={{ color: '#fff ' }} to="/order">Order Now </Link>
+                            </button>
                         </div>
 
                     </form>
