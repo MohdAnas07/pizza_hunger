@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import '../scss/home.scss';
 import PizzaCard from '../components/PizzaCard';
 
-// import { HashScroll } from "react-hash-scroll";
-
 import { pizzas } from '../pizza_data';
 
 import AOS from 'aos';
@@ -12,7 +10,7 @@ import Menu from '../components/Menu';
 
 const Home = () => {
     AOS.init({
-        duration: 600, // values from 0 to 3000, with step 50ms
+        duration: 600, // 
         easing: 'ease-in-out',
         once: true,
         offset: 80,
